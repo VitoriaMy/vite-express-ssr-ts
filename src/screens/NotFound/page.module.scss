@@ -1,0 +1,29 @@
+.page {
+    height: 100%;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .tit {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .desc {
+        font-size: 32px;
+        line-height: 120px;
+    }
+
+    .btn {
+        line-height: 80px;
+        padding: 0 20px;
+        border-radius: 40px;
+        color: #fff;
+        background-color: var(--color-link);
+    }
+}

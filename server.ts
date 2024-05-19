@@ -3,10 +3,16 @@ import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import express from 'express';
 import api from './server/app.js';
+import dotEnv from 'dotenv';
 
 const __dirname: string = path.dirname(fileURLToPath(import.meta.url));
 const isTest = process.env.VITEST;
 const isProd = process.env.NODE_ENV === 'production'
+process.env.NODE_ENV = isProd ? "production" : "development";
+
+dotEnv.config();
+dotEnv.config({ path: `.env.${process.env.NODE_ENV}` });
+
 const root: string = process.cwd();
 
 const resolve = (_path: string) => path.resolve(__dirname, _path);

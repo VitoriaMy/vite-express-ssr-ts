@@ -3,28 +3,32 @@ import type { RouteObject } from "react-router-dom";
 import loadable from '@loadable/component'
 
 import Layout from "@core/components/Layout/Layout";
-import Home from "@screens/Home/Home";
-import homeLoader from "@loaders/homeLoader";
+import * as Home from "@screens/Home";
 import About from "@screens/About/About";
+import * as NotFound from "@screens/NotFound";
 
 const Contact = loadable(() => import("@screens/Contact/Contact"), { fallback: <div>Loading...</div> });
 
 const routes: RouteObject[] = [
     {
         path: "/",
-        element: <Layout />,
+        Component: Layout,
         children: [
             {
                 index: true,
-                element: <Home />,
-                loader: homeLoader
+                Component: Home.page,
+                loader: Home.loader
             }, {
                 path: "about",
-                element: <About />,
+                Component: About,
             },
             {
                 path: "contact",
-                element: <Contact />
+                Component: Contact,
+            },
+            {
+                path: "*",
+                Component: NotFound.page
             }
         ]
     }

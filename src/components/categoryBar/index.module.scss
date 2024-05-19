@@ -1,0 +1,18 @@
+.categoryBar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    line-height: 80px;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid #e0e0e0;
+
+    .tab {
+        width: 25%;
+        text-align: center;
+    }
+
+    .current {
+        color: var(--color-primary);
+    }
+
+}

@@ -14,8 +14,16 @@
     "serve": "cross-env NODE_ENV=production node ./dist/app/server"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@fingerprintjs/fingerprintjs": "^4.3.0",
     "@loadable/component": "^5.16.3",
+    "ahooks": "^3.7.11",
+    "axios": "^1.6.8",
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "postcss-pxtorem": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
@@ -25,6 +33,7 @@
     "@types/compression": "^1.7.5",
     "@types/express": "^4.17.21",
     "@types/loadable__component": "^5.13.9",
+    "@types/lodash": "^4.17.0",
     "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
@@ -68,6 +77,5 @@
     "Express.js Vite TypeScript Setup",
     "SSR Web Application with TypeScript",
     "High-Performance SSR with Vite"
-  ],
-  "packageManager": "pnpm@8.15.6+sha256.01c01eeb990e379b31ef19c03e9d06a14afa5250b82e81303f88721c99ff2e6f"
+  ]
 }

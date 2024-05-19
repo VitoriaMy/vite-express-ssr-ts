@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react()
+    react(),
   ],
   ssr: {
     noExternal: ['react-helmet-async'],
@@ -23,6 +23,7 @@ export default defineConfig({
       '@types': path.join(__dirname, './src/types'),
       '@client': path.join(__dirname, './src'),
       '@server': path.join(__dirname, './server'),
+      '@query': path.join(__dirname, './src/query'),
       '@loaders': path.join(__dirname, './src/loaders'),
     }
   },

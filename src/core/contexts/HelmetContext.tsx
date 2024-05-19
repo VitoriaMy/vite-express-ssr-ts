@@ -15,7 +15,7 @@ const HelmetProvider = (props: any) => {
         <helmetContext.Provider value={{ title, setTitle, meta, setMeta, link, setLink, script, setScript, style, setStyle }}>
             <Helmet>
                 {title && <title>{title}</title>}
-                {meta && meta.map((m: any) => <meta {...m} />)}
+                {meta && meta.map((m: any, index) => <meta key={index} {...m} />)}
                 {link && link.map((l: any) => <link {...l} />)}
                 {script && script.map((s: any) => <script {...s} />)}
                 {style && (typeof style === 'string') && <style>{style}</style>}

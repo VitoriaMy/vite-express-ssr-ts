@@ -1,0 +1,48 @@
+.beader_bar {
+    height: 100px;
+    line-height: 100px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+
+    .inner {
+        height: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: inherit;
+    }
+
+    .fixed {
+        padding: inherit;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .left {
+        flex: none;
+        width: 100px;
+        text-align: center;
+    }
+
+    .right {
+        flex: none;
+        min-width: 100px;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    h2 .center {
+        flex: 1;
+        text-align: center;
+    }
+
+    div.center {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

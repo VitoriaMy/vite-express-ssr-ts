@@ -1,0 +1,42 @@
+.cover {
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.list {
+    padding: 10px 20px 0;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+    .cover {
+        flex: none;
+        width: 160px;
+        height: 200px;
+    }
+
+    .cont {
+        flex: 1;
+        padding-left: 20px;
+    }
+
+    .name {
+        span {
+            float: right;
+        }
+    }
+
+    .state {
+        border-bottom: 1px dashed #868686;
+        padding: 10px 0;
+        text-align: right;
+    }
+}

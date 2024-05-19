@@ -3,8 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import App from './App'
 import routes from '@core/routes'
-
-import '@assets/styles/index.scss'
+import './init.scss'
 
 const router = createBrowserRouter(routes);
 
